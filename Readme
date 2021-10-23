@@ -1,0 +1,7 @@
+İlk proje SagaApplication aynı zamanda manager kütüphanesi altıda
+sagamanager yapısını bulundurmaktadır.Kalan aggregate,event,projection yapıları
+cqrs ile aynı kullanım mantığındadır
+
+İki adet proje vardır.ordersaga ilk projenin içine zip olarak eklenmiştir
+
+Ordersaga projesinin altında diğer projedeki paket adlarıyla defaultta aynı olması için ilk projeye göre paket yapısı oluşturulmuştur.Bunlar ortak bir jarın içine çekilip ordan microservislere referans olarak verilebilir.CommandHandlerlara commandname ile alias verilerek ayarlanabilir veya bu sekilde ortak bir paket adı yapısı oluşturulup classların kopyaları projeler arası oluşturulabilir(Microservisler arası fiziksel bağımlılık yapacak bir jar daha oluşturulmak istenmiyorsa).
